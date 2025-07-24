@@ -3272,7 +3272,7 @@ span.fill {
     bottom: 0;
     right: 0;
     text-align: center;
-    background: url(../images/about/about-5.jpg);
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3313,7 +3313,7 @@ span.fill {
     bottom: 0;
     right: 0;
     text-align: center;
-    background: url(../images/about/about-6.jpg);
+    /* background: url(../images/about/about-6.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
