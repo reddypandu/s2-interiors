@@ -429,13 +429,13 @@
 
 // service Active
     $('.details_list').owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         smartSpeed:1500,
         autoplayTimeout: 10000,
         dotsEach:true,
         dots: false,
-        nav: true,
+        nav: false,
         navText: ["<i class='bi bi-arrow-left''></i>", "<i class='bi bi-arrow-right''></i>"],
         responsive: {
             0: {
@@ -454,7 +454,7 @@
                 items: 1
             },
             1920: {
-                items: 5
+                items: 1
             }
         }
     })

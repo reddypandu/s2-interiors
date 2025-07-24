@@ -757,13 +757,13 @@ ul.sub-menu li:hover a span{
 }
 
 .sticky.hendre_nav_manu.five.upper {
-    background: #EDEDEB!important;
+    background: #fff!important;
     border-bottom: 1px solid #DDDDDD;
     padding: 0px 0px 0px 2px;
 }
 
 .hendre_nav_manu.five.upper {
-    background: transparent;
+    background: #fff;
     border-bottom: 1px solid #DEDEDE;
     padding: 0px 0px 0px 0px;
 }
@@ -5254,24 +5254,48 @@ span.fill {
     transition: .5s;
     transform: scale(0);
 }
+.project_area_five.upper .item .single_project_content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: .5s;
+    transform: scale(0);
+    z-index: -1;
+}
 
 .project_area_five .single_project-tmb img {
     width: 100%;
 }
-
-.project_area_five .single_project_content {
+.project_area_five.upper .item{
+    margin-bottom: 2rem;
+}
+.project_area_five.upper .item .single_project_content {
     position: absolute;
     top: 22%;
     left: 0;
     right: 0;
     text-align: center;
     opacity: 0;
-    transition: .5s;
+    transition: 1s;
     transform: scale(0);
     margin: 5px 20px;
     padding: 0 0;
+    z-index:2;
+ 
 }
-
+.project_area_five.upper .item:hover .single_project_content::before {
+    opacity: 1;
+    transform: scale(1);
+}
+.project_area_five.upper .item:hover .single_project_content{
+    opacity: 1;
+    transform: scale(1);
+}
 .project_area_five .single_project_content h3 {
     font-size: 22px;
     line-height: 35px;
