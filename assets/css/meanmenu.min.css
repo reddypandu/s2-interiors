@@ -1,6 +1,6 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #846A4D;
+  background:white;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -52,7 +52,7 @@ a.meanmenu-reveal{display:none}
 .mean-container .mean-nav ul li li li li a{width:60%;padding:1em 20%}
 .mean-container .mean-nav ul li li li li li a{width:50%;padding:1em 25%}
 .mean-container .mean-nav ul li a:hover {
-  background: #f8f8f8 none repeat scroll 0 0;
+  background: #444 none repeat scroll 0 0;
 }
 .mean-container .mean-nav ul li a.mean-expand {
 
@@ -95,7 +95,7 @@ a.meanmenu-reveal{display:none}
 	border-radius: 0;
 }
 .mean-container a.meanmenu-reveal span {
-  background: #fff;
+  background: #444;
 }
 .mobile-menu-area {
   background: #fff none repeat scroll 0 0;
@@ -117,9 +117,9 @@ a.meanmenu-reveal{display:none}
   color: #fff !important;
 }
 .mean-container a.meanmenu-reveal:hover span {
-  background: #fff;
+  background: #000000;
 }
-.mean-container .mean-bar::before {
+/* .mean-container .mean-bar::before {
     color: #fff;
     content: "Arcke";
     font-size: 28px;
@@ -127,5 +127,18 @@ a.meanmenu-reveal{display:none}
     left: 10px;
     position: absolute;
     top: 18px;
+} */
+ .mean-bar::before {
+  content: "";
+  background-image: url('/assets/images/logo/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
+
 
