@@ -1048,7 +1048,16 @@ ul.social-box li a:hover {
     position: relative;
     z-index: 1;
 }
-
+.breadcumb-area::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 16, 16, 0.7);
+    z-index: -1;
+}
 .breadcumb-area .breadcumb-content h1 {
     font-size: 56px;
     line-height: 60px;
