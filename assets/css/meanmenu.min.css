@@ -130,7 +130,7 @@ a.meanmenu-reveal{display:none}
 } */
  .mean-bar::before {
   content: "";
-  background-image: url('/assets/images/logo/logo.png');
+  background-image: url('../images/logo/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
