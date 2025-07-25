@@ -1039,7 +1039,7 @@ ul.social-box li a:hover {
 ==================================================-*/
 
 .breadcumb-area {
-    background: url('/assets/images/slider/1.png');
+    background-image: url('/assets/images/slider/1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
