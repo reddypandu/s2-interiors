@@ -99,7 +99,8 @@ a.meanmenu-reveal{display:none}
   background: #444;
 }
 .mobile-menu-area {
-  background: #fff none repeat scroll 0 0;
+  /* background: #fff none repeat scroll 0 0; */
+   background: linear-gradient(to right, black, gray);
   }
 .mean-container .mean-nav ul li a.mean-expand {
   background: none;
