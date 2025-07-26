@@ -749,7 +749,7 @@ ul.sub-menu li:hover a span{
 }
 
 .hendre_nav_manu.five.upper .hendre_menu>ul>li>a {
-    color: #101010!important;
+    /* color: #101010!important; */
 }
 
 .hendre_nav_manu.five.upper .hendre_menu>ul>li>a:hover {
@@ -757,7 +757,8 @@ ul.sub-menu li:hover a span{
 }
 
 .sticky.hendre_nav_manu.five.upper {
-    background: #fff!important;
+    /* background: #fff!important; */
+    background: linear-gradient(to right, black, gray);
     border-bottom: 1px solid #DDDDDD;
     padding: 0px 0px 0px 2px;
 }
