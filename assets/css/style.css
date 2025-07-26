@@ -764,7 +764,8 @@ ul.sub-menu li:hover a span{
 }
 
 .hendre_nav_manu.five.upper {
-    background: #fff;
+    /* background: #fff; */
+     background: linear-gradient(to right, black, gray);
     border-bottom: 1px solid #DEDEDE;
     padding: 0px 0px 0px 0px;
 }
