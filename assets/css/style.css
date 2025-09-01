@@ -1786,20 +1786,25 @@ ul.social-box li a:hover {
     margin-top: 23%;
 }
 
-.slider_area_five .single-slider_icon-list {
+.single-slider_icon-list {
     position: relative;
-    left: 0;
-    z-index: 1;
-    top: -240px;
+    margin-top:1rem;
+    padding-left:10px;
+    /* left: 0;
+    z-index: -1;
+    top: -240px; */
 }
-
-.slider_area_five .single-slider_icon-list ul li {
-    display: block;
+.single-slider_icon-list ul li {
+    display: inline-flex;
     margin-bottom: 15px;
+    gap:5px;
 }
-
-.slider_area_five .single-slider_icon-list ul li a {
-    display: inline-block;
+.mobile-head {
+    font-size:20px;
+    padding: 1rem;
+}
+.single-slider_icon-list ul li a {
+   
     font-size: 14px;
     background: #3B3132;
     color: #D7AB79;
@@ -1810,7 +1815,7 @@ ul.social-box li a:hover {
     transition: .5s;
 }
 
-.slider_area_five .single-slider_icon-list ul li a:hover{
+ .single-slider_icon-list ul li a:hover{
      background: #D7AB79;
     color: #fff;
 }
@@ -12377,7 +12382,8 @@ button.btns:hover::before{
   padding: 0px 15px;
   border-bottom: 1px solid #ddd;
   position: relative;
-  z-index: 1001;
+  z-index: 95;
+
 }
 .mobile-logo img {
  width:150px;
@@ -12394,7 +12400,7 @@ button.btns:hover::before{
   inset: 0;
   background: rgba(0,0,0,0.6);
   display: none;
-  z-index: 1000;
+  z-index: 98;
 }
 
 /* Mobile Menu */
@@ -12407,7 +12413,7 @@ button.btns:hover::before{
   background: #000000;
   overflow-y: auto;
   transition: left 0.3s ease;
-  z-index: 1001;
+  z-index: 99;
   /* padding: 15px; */
 }
 .mobile-menu.active {
