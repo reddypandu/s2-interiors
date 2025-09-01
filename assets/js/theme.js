@@ -769,3 +769,39 @@
 
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".mobile-menu-btn");
+  const menu = document.querySelector(".mobile-menu");
+  const closeBtn = document.querySelector(".mobile-menu-close");
+  const overlay = document.querySelector(".mobile-menu-overlay");
+
+  // Main menu open/close
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add("active");
+    overlay.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove("active");
+    overlay.style.display = "none";
+  });
+
+  overlay.addEventListener("click", () => {
+    menu.classList.remove("active");
+    overlay.style.display = "none";
+  });
+
+  // Submenu toggle on click
+  document.querySelectorAll(".mobile-nav li > a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const parentLi = this.parentElement;
+
+      if (parentLi.querySelector(".sub-menu")) {
+        e.preventDefault(); // Prevent navigation
+        parentLi.classList.toggle("open");
+      }
+    });
+  });
+});
+

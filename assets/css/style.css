@@ -10697,7 +10697,7 @@ Shop dtls Right
 <!--  Arcke footer-section CSS -->
 <!-- ============================================================== -->*/
 @media(max-width:992px){
-    .fa-angle-down{
+    .hendre_menu .fa-angle-down{
         display: none;
     }
 }
@@ -12371,6 +12371,127 @@ button.btns:hover::before{
 
 
 
+	/* Mobile Header */
+.mobile-header {
+  background: #000000;
+  padding: 0px 15px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1001;
+}
+.mobile-logo img {
+ width:150px;
+ filter:brightness(500);
+}
+.mobile-menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 1000;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: #000000;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 1001;
+  /* padding: 15px; */
+}
+.mobile-menu.active {
+  left: 0;
+}
+.mobile-menu-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.mobile-menu-close {
+  font-size: 22px;
+  cursor: pointer;
+}
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-nav li {
+  margin-bottom: 10px;
+    background-color: white;
+    padding:10px;
+    transition: hover .5s ease;
+}
+
+.mobile-nav a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+
+  /* padding: 8px 0; */
+}
+.mobile-nav .head-btn{
+	display: inline-block;
+    font-size: 16px;
+    background: #C79E70;
+    padding: 11px 27px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.mobile-nav .sub-menu {
+  margin-left: 15px;
+  display: none;
+}
+/* Remove hover effect */
+.mobile-nav li:hover > .sub-menu {
+  display: none;
+}
+
+/* Keep submenu hidden by default */
+.mobile-nav .sub-menu {
+  margin-left: 15px;
+  display: none;
+}
+.mobile-nav li.open > .sub-menu {
+  display: block;
+}
 
 
 
+.mobile-nav li {
+  position: relative;
+}
+.mobile-nav .toggle-icon {
+  float: right;
+  margin-top:10px;
+  transition: transform 0.3s ease;
+}
+.mobile-nav li.open > a .toggle-icon {
+  transform: rotate(180deg); /* rotate when active */
+  color:#000000;
+  margin-top:10px;
+}
+.mobile-nav .sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: 15px;
+  transition: max-height 1s ease;
+}
+
+.mobile-nav li.open > .sub-menu {
+  max-height: 500px; /* adjust depending on submenu size */
+}
