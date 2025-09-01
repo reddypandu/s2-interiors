@@ -1,12 +1,5 @@
 
-/*===============================================
-Template Name: Arcke - Architecture & Interior Design HTML5 Template
-Author:  https://themeforest.net/user/dreamit-solution
-Description: Description
-Version: 1.0.0
-Text Domain: Arcke
-Tags:       architect, architecture, architecture design, architecture portfolio, architecture studio, clean, furniture store, gallery, interior decoration, interior design, interior design portfolio, interior designer, modern, property
-================================================*/
+
     
 /*TABLE OF CONTENTS*/
 /*=====================
@@ -4077,7 +4070,7 @@ span.fill {
 }
 
 .service_area_five .single_service_box::before {
-    position: absolute;
+    /* position: absolute;
     content: "";
     top: 0;
     left: 0;
@@ -4086,7 +4079,7 @@ span.fill {
     background: #C79E70;
     opacity: 0.1;
     transform: scale(0);
-    transition: .5s;
+    transition: .5s; */
 }
 
 .service_area_five .single_service_box .service_title h3 {
@@ -4132,8 +4125,8 @@ span.fill {
 }
 
 .service_area_five .single_service_box:hover::before{
-    transform: scale(1);
-    opacity: 0.1;
+    /* transform: scale(1);
+    opacity: 0.1; */
 }
 
 .service_area_five .single_service_box:hover .service_number h1{
@@ -4158,7 +4151,10 @@ span.fill {
 }
 
 .service_area_five.upper .single_service_box {
-    background: #fff;
+    background: linear-gradient(to top, #fff , #D9AB7A);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
 }
 
 .service_area_five.upper .single_service_box .service_title h3 {
@@ -4173,17 +4169,21 @@ span.fill {
 .service_area_five.upper .single_service_box .service_title p {
     color: #101010;
 }
+.service_area_five.upper .single_service_box a{
+    float: right;
+    color: #C79E70;
+}
 
 .service_area_five.upper .single_service_box .service_number h1 {
     -webkit-text-stroke-color: #101010;
     -webkit-text-stroke-width: 1px;
-    opacity: 0.1;
+    opacity: 1;
 }
 
 .service_area_five.upper .single_service_box:hover .service_number h1 {
-    opacity: 1;
+    /* opacity: 1;
     -webkit-text-stroke-color: #D6AA78;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
 }
 
 

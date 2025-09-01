@@ -207,19 +207,19 @@ ul {
 
 
 *::-moz-selection {
-    background: #4fc1f0;
+    background: #D9AB7A;
     color: #454545;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #4fc1f0;
+    background: #D9AB7A;
     color: #454545;
     text-shadow: none;
 }
 
 ::selection {
-    background: #4fc1f0;
+    background: #D9AB7A;
     color: #454545;
     text-shadow: none;
 }
