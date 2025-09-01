@@ -12407,8 +12407,8 @@ button.btns:hover::before{
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: -280px;
-  width: 280px;
+  left: -300px;
+  width: 300px;
   height: 100%;
   background: #000000;
   overflow-y: auto;
