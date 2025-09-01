@@ -700,8 +700,12 @@ ul.sub-menu li:hover a span{
 
 .mobile-menu.mean-container {
     overflow: hidden;
-}
 
+}
+.mobile-menu-logo  img
+{
+width:100px;
+}
 .head-btn {
     display: inline-block;
 }
