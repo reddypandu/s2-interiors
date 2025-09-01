@@ -12402,8 +12402,18 @@ button.btns:hover::before{
   border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 95;
-
+  transition: all 0.3s ease-in-out; /* smooth effect */
 }
+
+/* Fixed version */
+.mobile-header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+}
+
 .mobile-logo img {
  width:150px;
  filter:brightness(500);

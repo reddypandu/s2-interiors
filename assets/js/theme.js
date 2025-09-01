@@ -805,3 +805,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+ window.addEventListener("scroll", function () {
+    const header = document.querySelector(".mobile-header");
+    if (window.scrollY > 200) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  });
