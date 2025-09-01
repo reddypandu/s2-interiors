@@ -5283,7 +5283,7 @@ span.fill {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,5);
     opacity: 0;
     transition: .5s;
     transform: scale(0);
@@ -5308,7 +5308,7 @@ span.fill {
     margin: 5px 20px;
     padding: 0 0;
     z-index:2;
- 
+
 }
 .project_area_five.upper .item:hover .single_project_content::before {
     opacity: 1;
@@ -5345,6 +5345,7 @@ span.fill {
     position: relative;
     z-index: 1;
     transition: .5s;
+    margin-bottom: 10px;
 }
 
 .project_area_five .single_project_box:hover::before{
@@ -12500,4 +12501,23 @@ button.btns:hover::before{
 
 .mobile-nav li.open > .sub-menu {
   max-height: 500px; /* adjust depending on submenu size */
+}
+
+.accordion-item:first-of-type .accordion-button{
+    border-top: 1px solid #D2A776;
+
+}
+.accordion-button:not(.collapsed){
+    color: #000000;
+    background-color: #fff;
+    box-shadow: none;
+    border-color: #D2A776;
+     border-top: 1px solid #D2A776;
+}
+.accordion-button:focus{
+      border-color: #D2A776;
+       border-top: 1px solid #D2A776;
+}
+.accordion-button::after{
+    color:#D2A776;
 }
